@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Placemark><name>Roski School of Art and Design | Dept. of Art and design</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.01898268908766,-118.28731447257343</coordinates></Point>
+</Placemark>
+<Placemark><name>Roski School of Art and Design | Dept. of Urban Design</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.019393760718295,-118.28802487687939</coordinates></Point>
+</Placemark>
+<Placemark><name>Thornton School of Music | building1</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.02220909573416-118.28512560700669</coordinates></Point>
+</Placemark>
+<Placemark><name>Thornton School of Music | building2</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.022631391861935-118.2851770191111</coordinates></Point>
+</Placemark>
+<Placemark><name>USC School of Cinematic Arts | Building1</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.023609121494246,-118.28738888920063</coordinates></Point>
+</Placemark>
+<Placemark><name>USC School of Cinematic Arts | Building2</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.0238157250828,-118.2861420507534</coordinates></Point>
+</Placemark>
+<Placemark><name>Marshall School of Business | Dept. of Data Sciences and Operations</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.01878544667401,-118.2854864757678</coordinates></Point>
+</Placemark>
+<Placemark><name>Marshall School of Business | Dept. of Finance and Business Economics</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.0186488852522,-118.28540157650629</coordinates></Point>
+</Placemark>
+<Placemark><name>Annenberg School for Communication and Journalism | Building1</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.02215962878781,-118.28661356954078</coordinates></Point>
+</Placemark>
+<Placemark><name>Annenberg School for Communication and Journalism | Building2</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.02128388787245,-118.2883033974312</coordinates></Point>
+</Placemark>
+<Placemark><name>Viterbi School of Engineering | Dept. of Electrical Engineering</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.019811037074874,-118.29040412008904</coordinates></Point>
+</Placemark>
+<Placemark><name>Viterbi School of Engineering | Dept. of Aerospace Engineering</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>34.02105106501422,-118.28957217302153 aersospace</coordinates></Point>
+</Placemark>
+</Document></kml>

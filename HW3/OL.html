@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<title>OL</title>
+<script src="https://openlayers.org/api/OpenLayers.js">
+</script>
+<style>
+#map {
+    width:400px;
+    height:400px;
+}
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+
+
+<script>
+// your JS code 
+//console.log("Hola, all!");
+//alert("Hello JS World!");
+
+// my data is a label/ID for what we store, which is the object stored in variable d, 
+// whose value is {"k1":[()]}, which consists of a key called k1 
+// with an array as its value: [{"a":5, "b":-6}]
+var d = {"k1":[{"x":-118.2881514, "y":34.0319636},
+{"y":-118.28731447257343, "x":34.01898268908766},
+{"y":-118.28802487687939, "x":34.019393760718295},
+{"y":-118.28512560700669, "x":34.02220909573416},
+{"y":-118.2851770191111,  "x":34.022631391861935},
+{"y":-118.28738888920063, "x":34.023609121494246},
+{"y":-118.2861420507534, "x": 34.0238157250828},
+{"y":-118.2854864757678,"x": 34.01878544667401},
+{"y":-118.28540157650629, "x": 34.0186488852522},
+{"y":-118.28661356954078,  "x":34.02215962878781},
+{"y":-118.2883033974312, "x": 34.02128388787245},
+{"y":-118.29040412008904, "x": 34.019811037074874},
+{"y":-118.28957217302153, "x": 34.02105106501422}]};
+localStorage.setItem("myData",JSON.stringify(d));
+// you'd need to modify the above, to store all your points
+
+
+//next [presumably after closing the browser, and reloading our html]
+// we can fetch the stored data, just by supplying its key:
+var dataStored = JSON.parse(localStorage.getItem("myData"));
+// verify that we fetched our data correctly
+console.log(dataStored); 
+// we can iterate through our array [of points], like so:
+var a = dataStored.k1; // a will contain our array
+initMap();
+for(var indx in a) { // indx is 0,1,2...
+  addMarker(a[indx].x, a[indx].y) // this could be a single point
+}
+
+// here's how to plot points on a map, using OpenLayers:
+// [this is code I mildly modified, from an existing source]
+function initMap() {
+        map = new OpenLayers.Map('map');
+        basemap = new OpenLayers.Layer.OSM("Simple OSM Map");
+        map.addLayer(basemap);
+        markers = new OpenLayers.Layer.Markers("Markers");
+        map.addLayer(markers);
+ map.setCenter(new OpenLayers.LonLat(-77.777, 47.777).transform(
+                new OpenLayers.Projection("EPSG:4326"),
+                map.getProjectionObject()), 10
+        );
+}// initMap()
+
+function addMarker(latitude, longitude) {
+        var lonLat = new OpenLayers.LonLat(longitude, latitude)
+            .transform(
+                new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+                map.getProjectionObject() // to Spherical Mercator Projection
+        );
+        var point = new OpenLayers.Marker(lonLat);
+        markers.addMarker(point);
+        map.setCenter(lonLat,14); // second arg is zoom level
+        //console.log(latitude + ", " + longitude);
+}// addMarker()
+
+
+// load and setup map layers
+
+
+// here's how to plot just ONE [lat,long] on the map! 
+//addMarker(34.0205,-118.28538); // Tommy!
+// for fun, play around with the above coords! 
+// Qn: how would you bring up the northern part of Suqian (China)??!!
+
+</script>
+
+</body>
+
+</html>

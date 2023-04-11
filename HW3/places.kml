@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+<Placemark><name>Home</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2881514,34.0319636</coordinates></Point>
+</Placemark>
+<Placemark><name>Roski School of Art and Design | Dept. of Art and design</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28731447257343, 34.01898268908766</coordinates></Point>
+</Placemark>
+<Placemark><name>Roski School of Art and Design | Dept. of Urban Design</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28802487687939, 34.019393760718295</coordinates></Point>
+</Placemark>
+<Placemark><name>Thornton School of Music | building1</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28512560700669,34.02220909573416</coordinates></Point>
+</Placemark>
+<Placemark><name>Thornton School of Music | building2</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2851770191111, 34.022631391861935</coordinates></Point>
+</Placemark>
+<Placemark><name>USC School of Cinematic Arts | Building1</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28738888920063,34.023609121494246</coordinates></Point>
+</Placemark>
+<Placemark><name>USC School of Cinematic Arts | Building2</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2861420507534, 34.0238157250828</coordinates></Point>
+</Placemark>
+<Placemark><name>Marshall School of Business | Dept. of Data Sciences and Operations</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2854864757678, 34.01878544667401</coordinates></Point>
+</Placemark>
+<Placemark><name>Marshall School of Business | Dept. of Finance and Business Economics</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28540157650629, 34.0186488852522</coordinates></Point>
+</Placemark>
+<Placemark><name>Annenberg School for Communication and Journalism | Building1</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28661356954078, 34.02215962878781</coordinates></Point>
+</Placemark>
+<Placemark><name>Annenberg School for Communication and Journalism | Building2</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2883033974312, 34.02128388787245</coordinates></Point>
+</Placemark>
+<Placemark><name>Viterbi School of Engineering | Dept. of Electrical Engineering</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.29040412008904, 34.019811037074874</coordinates></Point>
+</Placemark>
+<Placemark><name>Viterbi School of Engineering | Dept. of Aerospace Engineering</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28957217302153, 34.02105106501422</coordinates></Point>
+</Placemark>
+<Placemark>
+<name>ConvexHull</name>
+<Style><LineStyle><color>ffff7d53</color></LineStyle><PolyStyle><color>80fe4d28</color></PolyStyle></Style>
+<Polygon>
+<outerBoundaryIs>
+<LinearRing>
+<coordinates>-118.28540157650629,34.0186488852522 -118.28731447257343,34.01898268908766 -118.29040412008904,34.019811037074874 -118.2881514,34.0319636 -118.2851770191111,34.022631391861935 -118.28512560700669,34.02220909573416 -118.28540157650629,34.0186488852522</coordinates>
+</LinearRing>
+</outerBoundaryIs>
+</Polygon> 
+</Placemark>
+
+<Placemark>
+<name>N1</name>
+<description>N1</description>
+<Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString>
+<coordinates>-118.2881514,34.0319636 -118.28738888920063,34.023609121494246</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>N2</name>
+<description>N2</description>
+<Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString>
+<coordinates>-118.2881514,34.0319636 -118.2861420507534,34.0238157250828</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>N3</name>
+<description>N3</description>
+<Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString>
+<coordinates>-118.2881514,34.0319636 -118.2851770191111,34.022631391861935</coordinates>
+</LineString>
+</Placemark>
+
+<Placemark>
+<name>N4</name>
+<description>N4</description>
+<Style><LineStyle><color>ff00ffff</color><width>2</width></LineStyle></Style>
+<LineString>
+<coordinates>-118.2881514,34.0319636 -118.28661356954078,34.02215962878781</coordinates>
+</LineString>
+</Placemark>
+
+</Document></kml>
